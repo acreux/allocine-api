@@ -86,7 +86,3 @@ class Allocine(object):
         u_kwargs = kwargs.copy()
         u_kwargs['code'] = code
         return self.dispatcher.dispatch('episode', **u_kwargs)
-
-a = Allocine()
-from pprint import pprint
-pprint(a.person('194788'))

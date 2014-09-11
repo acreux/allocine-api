@@ -12,12 +12,13 @@ class AllocineConnector(object):
     def __init__(self):
         self.api_host_name = 'http://api.allocine.fr'
         self.api_base_path = '/rest/v3/'
+
+        # Other keys
         # self.api_partner = 'V2luZG93czg'
         # self.api_secret_key = 'e2b7fd293906435aa5dac4be670e7982'
 
         self.api_partner = "100043982026"
         self.api_secret_key = "29d185d98c984a359e6e6f26a0474269"
-        # self.user_agent = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; MSAppHost/1.0)'
         self.user_agent = "Dalvik/1.6.0 (Linux; U; Android 4.2.2; Nexus 4 Build/JDQ39E)"
 
     def _build_path(self, api_method, params):
@@ -46,5 +47,4 @@ class AllocineConnector(object):
         try:
             return req.json()
         except ValueError as e:
-            print e
-            print req.text
+            print "problem"
