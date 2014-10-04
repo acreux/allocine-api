@@ -8,5 +8,4 @@ setup(
     packages=['allocine'],
     scripts=[],
     description='Simple Allocine-Api.',
-    long_description=open('README.txt').read(),
-)
+    long_description=open('README.txt').read(),)

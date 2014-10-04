@@ -5,5 +5,3 @@ allocine/__init__.py
 allocine/allocine.py
 allocine/connector.py
 allocine/dispatcher.py
-allocine/test/__init__.py
-allocine/test/test.py
